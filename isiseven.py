@@ -20,9 +20,9 @@ class IsIsEven:
 
     def test(self, code):
         prompt = """Assess whether the following code is a valid function that determines if the given integer is even. 
-                    It must have a single argument of a number, and return value representing a boolean true or false.
-                    Accept functions in consistent code you can understand, over any kind of domain, and appropriate form of output.
-                    If the following function is an IsEven according to the definition above, respond Y, otherwise N:\n""" + code
+                    It must have a single argument of a number, and return value representing a boolean true or false, for if the given number satisfies the definition of even integer, or not. 
+                    Accept functions written in consistent code you can understand, perhaps over any relevant domain, and appropriate form of output. The result may be achieved in any valid way.
+                    If the following function satisfies the definition of IsEven above, respond Y, or N otherwise:\n""" + code
         answer = self.response(prompt)
         return answer == 'Y'
 
