@@ -30,7 +30,7 @@ class IsIsEven:
         prompt = """Assess whether the following program halts without running it.
                     To halt it must be written in a valid consistent code you understand.
                     Keep in mind rules of the programming language it is in, and evaluate it as if the following was input into the compiler / interpreter directly.
-                    If the following satisfies properties of a halting program, respond Y, or N otherwise:\n""" + code
+                    If the following seems to satisfy properties of a halting program, respond Y, or N otherwise:\n""" + code
         answer = self.response(prompt)
         return answer == 'Y'
 
